@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   console.log(data)
-  const files = data.allFile.edges;
+  const files = data.allFile.edges
   return (
     <Layout>
       <h2>My Site's Files</h2>

@@ -6,12 +6,12 @@ tags: ["examples", "pugs"]
 cover: "pug.jpg"
 ---
 
-This post is about the craziest pants! 
+This post is about the craziest pants!
 
 ## Some inspirational images
 
-Get inspired to make the pants! 
+Get inspired to make the pants!
 
-## My pants! 
+## My pants!
 
-Look what I did! 
+Look what I did!
