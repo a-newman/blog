@@ -1,6 +1,6 @@
 import React from "react"
-
 import { Link, useStaticQuery, graphql } from "gatsby"
+import layoutStyles from "./layout.module.css"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -9,9 +9,9 @@ const ListLink = props => (
 )
 
 const Header = props => (
-  <div className="blog-header" style={{ textAlign: `center` }}>
+  <div className={layoutStyles.blogHeader} style={{ textAlign: `center` }}>
     <Link to="/">
-      <h1>{props.title}</h1>
+      <h1 className={layoutStyles.title}>{props.title}</h1>
     </Link>
     <ul>
       <ListLink to="/about/">About</ListLink>

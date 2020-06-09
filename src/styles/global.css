@@ -1,0 +1,13 @@
+:root {
+  --color1: #011627ff;
+  --background-color: #fdfffcff;
+  --color3: #2ec4b6ff;
+  --color4: #e71d36ff;
+  --color5: #ff9f1cff;
+  --light-grey: hsl(0, 0%, 50%);
+}
+
+html {
+  font-family: Cambria, Georgia, serif;
+  background-color: var(--background-color);
+}

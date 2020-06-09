@@ -1,5 +1,8 @@
 import Typography from "typography"
-import fairyGateTheme from "typography-theme-fairy-gates"
-const typography = new Typography(fairyGateTheme)
+import theme from "typography-theme-irving"
+
+theme.headerFontFamily = ["merriweather", "serif"]
+theme.googleFonts = [{ name: "Merriweather", styles: [700] }]
+const typography = new Typography(theme)
 export const { scale, rhythm, options } = typography
 export default typography

@@ -1,16 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import postSummaryStyles from "./post_summary.module.css"
 
 export default ({ post }) => {
   console.log("frontmatter", post.frontmatter)
   return (
-    <div
-      style={{
-        borderBottom: `1px solid grey`,
-        paddingBottom: `2em`,
-      }}
-    >
-      <Link to={post.fields.slug}>
+    <div className={postSummaryStyles.container}>
+      <Link className={postSummaryStyles.titleLink} to={post.fields.slug}>
         <h3>{post.frontmatter.title}</h3>
       </Link>
       <h4>{post.frontmatter.date}</h4>
@@ -19,6 +15,7 @@ export default ({ post }) => {
       )}
       <p>{post.excerpt}</p>
       <Link to={post.fields.slug}>Read More >></Link>
+      <hr />
     </div>
   )
 }
