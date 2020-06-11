@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import PostSummary from "../components/post_summary.js"
 //import SEO from "../components/seo"
 
@@ -31,7 +30,13 @@ export const query = graphql`
           tableOfContents(absolute: false)
           frontmatter {
             title
-            cover
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             date(formatString: "MMMM DD, YYYY")
             status
             tags
