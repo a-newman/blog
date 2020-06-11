@@ -12,6 +12,10 @@ This post is about the craziest pants!
 
 Get inspired to make the pants!
 
+Here's an image: 
+
+![image of a pug](images/pug.jpg)
+
 ## My pants!
 
 Look what I did!

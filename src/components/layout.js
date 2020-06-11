@@ -37,14 +37,6 @@ export default ({ children }) => {
   return (
     <div>
       <Header title={title} />
-      {/* <div class="blog-header">
-        <h1 style={{ display: `inline` }}>{title}</h1>
-        <ul style={{ listStyle: `none` }}>
-          <ListLink to="/">{title}</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
-      </div> */}
       <div style={{ maxWidth: `75%`, margin: `0 auto` }}>{children}</div>
     </div>
   )
