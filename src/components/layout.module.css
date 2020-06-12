@@ -5,3 +5,9 @@
 .title {
   color: var(--color4);
 }
+
+.centerSection {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0.5em;
+}

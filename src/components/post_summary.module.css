@@ -1,6 +1,14 @@
+h4 {
+  color: var(--text-color)
+}
+
 .titleLink {
   text-decoration: none;
-  color: var(--color3);
+  color: var(--post-title);
+}
+
+.titleLink h3 span {
+  border-bottom: 2px dashed;
 }
 
 .excerpt {
@@ -26,4 +34,23 @@ hr:after {
   background: var(--background-color); 
   color: var(--light-grey); 
   font-size: 1.2em; 
+}
+
+a:hover span.readmorespan {
+  animation: blinking 1s ease-in-out infinite; 
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+    background-color: var(--link-hover-color);
+  }
+  50% {
+    opacity: 1;
+    background-color: var(--link-hover-color);
+  }
+  100% {
+    opacity: 0;
+    background-color: var(--link-hover-color);
+  }
 }

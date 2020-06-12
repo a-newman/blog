@@ -37,7 +37,7 @@ export default ({ children }) => {
   return (
     <div>
       <Header title={title} />
-      <div style={{ maxWidth: `75%`, margin: `0 auto` }}>{children}</div>
+      <div className={layoutStyles.centerSection}>{children}</div>
     </div>
   )
 }
