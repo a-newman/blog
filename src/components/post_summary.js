@@ -49,7 +49,7 @@ export default ({ post }) => {
       <Link to={post.fields.slug} className={postSummaryStyles.readmore}>
         Read More <span className={postSummaryStyles.readmorespan}>></span>
       </Link>
-      <hr />
+      <hr className={postSummaryStyles.divider} />
     </div>
   )
 }

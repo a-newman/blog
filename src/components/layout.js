@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import layoutStyles from "./layout.module.css"
+import SewingMachineAsciiArt from "./sewing_machine_art"
 
 const ListLink = props => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
@@ -8,11 +9,32 @@ const ListLink = props => (
   </li>
 )
 
+const StyledTitle = () => (
+  <h1 className={layoutStyles.title}>
+    <span className={layoutStyles.titleFlouncy}>Annie Makes </span>
+    <div className={layoutStyles.titleSpaceHolder}></div>
+    <br />
+    <div
+      className={layoutStyles.titleSpaceHolder + " " + layoutStyles.breakBefore}
+    ></div>
+    <span className={layoutStyles.titleTech}>Tech</span>
+    <span className={layoutStyles.titleFlouncy}> Styles</span>
+  </h1>
+)
+
 const Header = props => (
   <div className={layoutStyles.blogHeader} style={{ textAlign: `center` }}>
-    <Link to="/">
-      <h1 className={layoutStyles.title}>{props.title}</h1>
-    </Link>
+    <div className={layoutStyles.titleFlexBox}>
+      <div>
+        <SewingMachineAsciiArt />
+      </div>
+      <div>
+        <Link className={layoutStyles.titleLink} to="/">
+          <StyledTitle />
+        </Link>
+      </div>
+    </div>
+    {/* <hr /> */}
     <ul>
       <ListLink to="/about/">About</ListLink>
       <ListLink to="/search/">Search</ListLink>

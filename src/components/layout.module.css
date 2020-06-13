@@ -2,8 +2,43 @@
   margin: 3em
 }
 
-.title {
-  color: var(--color4);
+.titleFlexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.titleLink {
+  text-decoration: none;
+}
+
+h1.title {
+  margin-bottom: 0px;
+}
+
+.titleFlouncy {
+  color: var(--flouncy-title-color);
+  font-family: "Satisfy", "handwriting", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.titleTech {
+  color: var(--tech-title-color);
+  font-family: "Courier New", monospace;
+  font-size: 2.8em;
+  font-family: 
+}
+
+div.titleSpaceHolder {
+  display: inline-block;
+  width: 6em;
+}
+
+div.breakBefore {
+  break-before: always
 }
 
 .centerSection {

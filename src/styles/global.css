@@ -16,6 +16,8 @@
   --post-title: var(--tart-orange);
   --text-color: var(--oxford-blue);
   --link-hover-color: #60B2E5;
+  --flouncy-title-color: var(--radical-red);
+  --tech-title-color: var(--independence);
 }
 
 html {
