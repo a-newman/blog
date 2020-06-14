@@ -23,6 +23,7 @@
 html {
   font-family: Cambria, Georgia, serif;
   background-color: var(--background-color);
+  /* background-image: url("../images/pug.jpg") *1/ */
 }
 
 body {

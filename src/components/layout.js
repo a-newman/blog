@@ -14,9 +14,7 @@ const StyledTitle = () => (
     <span className={layoutStyles.titleFlouncy}>Annie Makes </span>
     <div className={layoutStyles.titleSpaceHolder}></div>
     <br />
-    <div
-      className={layoutStyles.titleSpaceHolder + " " + layoutStyles.breakBefore}
-    ></div>
+    <div className={layoutStyles.titleSpaceHolder}></div>
     <span className={layoutStyles.titleTech}>Tech</span>
     <span className={layoutStyles.titleFlouncy}> Styles</span>
   </h1>
@@ -34,10 +32,11 @@ const Header = props => (
         </Link>
       </div>
     </div>
-    {/* <hr /> */}
+    {/* <hr className={layoutStyles.stitchingLine} /> */}
     <ul>
+      <ListLink to="/">Posts</ListLink>
       <ListLink to="/about/">About</ListLink>
-      <ListLink to="/search/">Search</ListLink>
+      {/* <ListLink to="/search/">Search</ListLink> */}
     </ul>
   </div>
 )
