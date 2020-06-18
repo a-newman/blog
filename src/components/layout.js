@@ -21,7 +21,10 @@ const StyledTitle = () => (
 )
 
 const Header = props => (
-  <div className={layoutStyles.blogHeader} style={{ textAlign: `center` }}>
+  <div
+    className={`${layoutStyles.blogHeader} shadowBox`}
+    style={{ textAlign: `center` }}
+  >
     <div className={layoutStyles.titleFlexBox}>
       <div>
         <SewingMachineAsciiArt />
@@ -33,7 +36,7 @@ const Header = props => (
       </div>
     </div>
     {/* <hr className={layoutStyles.stitchingLine} /> */}
-    <ul>
+    <ul className={layoutStyles.navLinks}>
       <ListLink to="/">Posts</ListLink>
       <ListLink to="/about/">About</ListLink>
       {/* <ListLink to="/search/">Search</ListLink> */}
@@ -56,9 +59,14 @@ export default ({ children }) => {
   const title = data.site.siteMetadata.title
 
   return (
-    <div>
-      <Header title={title} />
-      <div className={layoutStyles.centerSection}>{children}</div>
-    </div>
+    <>
+      <div className={layoutStyles.backgroundDimmer}></div>
+      <div>
+        <div className={layoutStyles.centerSection}>
+          <Header title={title} />
+          {children}
+        </div>
+      </div>
+    </>
   )
 }

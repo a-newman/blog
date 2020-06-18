@@ -22,14 +22,27 @@
 
 html {
   font-family: Cambria, Georgia, serif;
-  background-color: var(--background-color);
-  /* background-image: url("../images/pug.jpg") *1/ */
+  /* background-color: var(--background-color); */
 }
 
 body {
   color: var(--text-color);
+  background-image: url("../images/rose_fabric.jpg");
+  /* background-color: gray; */
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 800px;
 }
 
 a:hover {
   color: var(--link-hover-color);
+}
+
+.shadowBox {
+  background-color: var(--background-color);
+  /* h-offset, v-offset, blur */
+  box-shadow: 3px 3px 20px #434343ff;
+  /* border: 0.5px solid #aaaaaa; */
+  padding: 1em;
+  margin-bottom: 2em;
 }

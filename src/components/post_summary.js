@@ -35,7 +35,7 @@ import Img from "gatsby-image"
 export default ({ post }) => {
   console.log("frontmatter", post.frontmatter)
   return (
-    <div className={postSummaryStyles.container}>
+    <div className={`${postSummaryStyles.container} shadowBox`}>
       <Link className={postSummaryStyles.titleLink} to={post.fields.slug}>
         <h3>
           <span>{post.frontmatter.title}</span>
@@ -49,7 +49,7 @@ export default ({ post }) => {
       <Link to={post.fields.slug} className={postSummaryStyles.readmore}>
         Read More <span className={postSummaryStyles.readmorespan}>></span>
       </Link>
-      <hr className={postSummaryStyles.divider} />
+      {/* <hr className={postSummaryStyles.divider} /> */}
     </div>
   )
 }

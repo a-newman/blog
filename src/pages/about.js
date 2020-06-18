@@ -5,7 +5,7 @@ import Layout from "../components/layout.js"
 
 export default ({ data }) => (
   <Layout>
-    <div>
+    <div className={"shadowBox"}>
       <h1>About {data.site.siteMetadata.title}</h1>
       <p>Keep posted for more details!</p>
     </div>

@@ -8,8 +8,10 @@ export default ({ data }) => {
   console.log("post", post)
   return (
     <Layout>
-      <h1 className={styles.title}>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className={"shadowBox"}>
+        <h1 className={styles.title}>{post.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
     </Layout>
   )
 }
