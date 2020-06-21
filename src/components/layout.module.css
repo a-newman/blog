@@ -71,5 +71,5 @@ div.titleSpaceHolder {
   height: 100%;
   z-index: -1;
   background-color: var(--background-color);
-  opacity: 0.4;
+  opacity: 0.5;
 }

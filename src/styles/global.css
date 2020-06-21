@@ -27,11 +27,12 @@ html {
 
 body {
   color: var(--text-color);
-  background-image: url("../images/rose_fabric.jpg");
+  background-image: url("../images/roses_vert.jpg");
   /* background-color: gray; */
   background-repeat: repeat;
-  background-position: center;
-  background-size: 800px;
+  /* background-position: center; */
+  /* background-size: 1400px; */
+  background-size: 100%;
 }
 
 a:hover {
