@@ -1,24 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Emoji from "../components/emoji.js"
 import Layout from "../components/layout.js"
 
 export default ({ data }) => (
   <Layout>
     <div className={"shadowBox"}>
-      <h1>About {data.site.siteMetadata.title}</h1>
-      <p>Keep posted for more details!</p>
+      <h1>About the blog</h1>
+      <p>
+        Hi fellow sewists and techies! My name is Anelise (but you can call me
+        Annie).
+      </p>
+      <p>
+        I'm a graduate student in Computer Science, but I've been sewing since
+        well before I was coding. I learned to sew from my mom right before
+        starting high school (so I was 13 <Emoji name="open_mouth" />
+        ). I've been making my own clothes ever since.
+      </p>
     </div>
   </Layout>
 )
-
-// this syntax: var`str` is a "tagged template" in JS
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
