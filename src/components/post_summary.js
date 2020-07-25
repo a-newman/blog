@@ -3,35 +3,6 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import postSummaryStyles from "./post_summary.module.css"
 import Img from "gatsby-image"
 
-// const PostHeaderImage = props => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       images: allFile {
-//         edges {
-//           node {
-//             relativePath
-//             name
-//             childImageSharp {
-//               fluid(maxWidth: 600) {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
-
-//   const img = data.images.edges.find(n =>
-//     n.node.relativePath.includes(props.imname)
-//   )
-//   if (!img) {
-//     return null
-//   }
-
-//   return <Img alt={props.alt} fluid={img.node.childImageSharp.fluid} />
-// }
-
 export default ({ post }) => {
   console.log("frontmatter", post.frontmatter)
   return (
