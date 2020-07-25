@@ -1,0 +1,453 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:131.25%/1.38 'Yrsa','georgia',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Yrsa','georgia',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.27542rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.17608rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.92211rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;color:inherit;font-family:'merriweather',serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.88547rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}ul{margin-left:1.38rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.38rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;font-size:0.85rem;line-height:1.38rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;font-size:0.92211rem;line-height:1.38rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:1.035rem;padding-right:0;padding-top:0;margin-bottom:1.38rem;font-size:1.08447rem;line-height:1.38rem;color:hsla(0,0%,0%,0.7);border-left:0.345rem solid hsla(0,0%,0%,0.87);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.38rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.38rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.38rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.38rem;margin-bottom:calc(1.38rem / 2);margin-top:calc(1.38rem / 2);}li > ul{margin-left:1.38rem;margin-bottom:calc(1.38rem / 2);margin-top:calc(1.38rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.38rem / 2);}code{font-size:0.85rem;line-height:1.38rem;}kbd{font-size:0.85rem;line-height:1.38rem;}samp{font-size:0.85rem;line-height:1.38rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.92rem;padding-right:0.92rem;padding-top:0.69rem;padding-bottom:calc(0.69rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:hsla(0,0%,0%,0.8);}a:hover{color:#3498DB;}h3,h4,h5,h6{margin-bottom:0.69rem;}@media only screen and (max-width:768px){blockquote{margin-left:-1.035rem;margin-right:0;padding-left:0.69rem;}}</style><link rel="apple-touch-icon" sizes="384x384" href="/blog/icons/icon-384x384.png"/><title data-react-helmet="true"></title><link rel="manifest" href="/blog/manifest.webmanifest"/><link rel="apple-touch-icon" sizes="48x48" href="/blog/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/blog/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/blog/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/blog/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/blog/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/blog/icons/icon-256x256.png"/><meta name="generator" content="Gatsby 2.18.12"/><link rel="apple-touch-icon" sizes="512x512" href="/blog/icons/icon-512x512.png"/><style data-href="/blog/styles.a6a7fe7feb47c5250b6d.css">:root{--light-grey:grey;--claret:#851b41;--radical-red:#ff3169;--french-pink:#f66e9b;--tart-orange:#ff3b3f;--princeton-orange:#fd8e3e;--space-cadet:#252056;--air-superiority-blue:#72a0c1;--floral-white:#fcf9f2;--independence:#4f4f6e;--oxford-blue:#12122b;--background-color:#fdfffc;--post-title:var(--tart-orange);--text-color:var(--oxford-blue);--link-hover-color:#60b2e5;--flouncy-title-color:var(--radical-red);--tech-title-color:var(--independence)}html{font-family:Cambria,Georgia,serif}body{color:var(--text-color);background-image:url(/blog/static/roses_vert-955a0cfda9b2b76f0d5d2d47c570145c.jpg);background-repeat:repeat;background-size:100%}a:hover{color:var(--link-hover-color)}.shadowBox{background-color:var(--background-color);box-shadow:3px 3px 20px #434343;padding:1em;margin-bottom:2em}.layout-module--blogHeader--Jrwku{margin-bottom:2em;margin-top:1em;padding:.5em .5em 0}.layout-module--titleFlexBox--2DhQP{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:flex-end}.layout-module--titleLink--303KS{text-decoration:none}h1.layout-module--title--2pFnw{margin-bottom:0}.layout-module--titleFlouncy--23O-p{color:var(--flouncy-title-color);font-family:Satisfy,handwriting,serif;font-size:2em;font-weight:400}.layout-module--titleTech--udPEa{color:var(--tech-title-color);font-family:Courier New,monospace;font-size:2.4em}div.layout-module--titleSpaceHolder--1iN8-{display:inline-block;width:5em}@media screen and (max-width:900px){div.layout-module--titleSpaceHolder--1iN8-{display:none}}@media screen and (max-width:700px){hr.layout-module--stitchingLine--1OVx6{display:none}}.layout-module--navLinks--x6Fll{margin:0;padding:0;-webkit-margin-after:0;margin-block-end:0}.layout-module--centerSection--24gL-{max-width:40em;margin:0 auto;padding:.5em}.layout-module--backgroundDimmer--1az5b{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background-color:var(--background-color);opacity:.5}.sewing_machine_art-module--container--l_STv{font-family:Courier,monospace;font-weight:1000;text-align:center;font-size:.3em;color:var(--tech-title-color);margin:0 20px}h1.blog-post-module--title--3-2cL{color:var(--post-title)}.post_summary-module--container--2fLCM{background-color:var(--background-color);margin-bottom:2em}h4{color:var(--text-color)}.post_summary-module--titleLink--Hflux{text-decoration:none;color:var(--post-title)}.post_summary-module--titleLink--Hflux h3 span{border-bottom:2px dashed}.post_summary-module--excerpt--2-wY-{margin-top:1em;margin-left:0}hr.post_summary-module--divider--18aZo{height:1px;border:0;background-image:-webkit-gradient(linear,left top,right top,from(transparent),color-stop(rgba(0,0,0,.75)),to(transparent));background-image:linear-gradient(90deg,transparent,rgba(0,0,0,.75),transparent);text-align:center;margin:2em 0}hr.post_summary-module--divider--18aZo:after{content:"\2702";display:inline-block;position:relative;top:-.6em;padding:0 3px;background:var(--background-color);color:var(--light-grey);font-size:1.2em}a:hover span.post_summary-module--readmorespan--2RSvW{-webkit-animation:post_summary-module--blinking--3OEk5 1s ease-in-out infinite;animation:post_summary-module--blinking--3OEk5 1s ease-in-out infinite}@-webkit-keyframes post_summary-module--blinking--3OEk5{0%{opacity:0;background-color:var(--link-hover-color)}50%{opacity:1;background-color:var(--link-hover-color)}to{opacity:0;background-color:var(--link-hover-color)}}@keyframes post_summary-module--blinking--3OEk5{0%{opacity:0;background-color:var(--link-hover-color)}50%{opacity:1;background-color:var(--link-hover-color)}to{opacity:0;background-color:var(--link-hover-color)}}</style><link href="//fonts.googleapis.com/css?family=Merriweather:700|Satisfy:400|Courier+New:700" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/blog/component---src-templates-blog-post-js-7ed158c9e3fc57d75d87.js"/><link as="script" rel="preload" href="/blog/app-009fbf66d6ecd3697ec3.js"/><link as="script" rel="preload" href="/blog/commons-3b9f0c565bd6143bfca0.js"/><link as="script" rel="preload" href="/blog/styles-39eefb1d9dd13251b0c0.js"/><link as="script" rel="preload" href="/blog/webpack-runtime-1e153563ffea3f9cca3e.js"/><link as="fetch" rel="preload" href="/blog/page-data/posts/working-it-out/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="layout-module--backgroundDimmer--1az5b"></div><div><div class="layout-module--centerSection--24gL-"><div class="layout-module--blogHeader--Jrwku shadowBox" style="text-align:center"><div class="layout-module--titleFlexBox--2DhQP"><div><div class="sewing_machine_art-module--container--l_STv">                                      &#x27;||&#x27;        <br/>    .0000000000000000000000000000000000000000.    <br/>    000000000000000000000000000000000000000000    <br/>    00000000000000000000000000000000 oo oo 000    <br/>    00000000000000000000000000000000 oo oo 000.00.<br/>    00000000000000000000000000000000       000.000<br/>    00000000000000000000000000000000 ooooo 000.000<br/>    00000000000000           &#x27;000000 ooooo 000.00&#x27;<br/>    &#x27;000000000000&#x27;            000000       000    <br/>         &#x27;|&#x27;                  0000000000000000    <br/>          |                   0000000000000000    <br/>.---------|-------------------0000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>0000000000000000000000000000000000000000000000    <br/>&#x27;00000000000000000000000000000000000000000000&#x27;    <br/></div></div><div><a class="layout-module--titleLink--303KS" href="/blog/"><h1 class="layout-module--title--2pFnw"><span class="layout-module--titleFlouncy--23O-p">Annie Makes </span><div class="layout-module--titleSpaceHolder--1iN8-"></div><br/><div class="layout-module--titleSpaceHolder--1iN8-"></div><span class="layout-module--titleTech--udPEa">Tech</span><span class="layout-module--titleFlouncy--23O-p"> Styles</span></h1></a></div></div><ul class="layout-module--navLinks--x6Fll"><li style="display:inline-block;margin-right:1rem"><a href="/blog/">Posts</a></li><li style="display:inline-block;margin-right:1rem"><a href="/blog/about/">About</a></li></ul></div><div class="shadowBox"><h1 class="blog-post-module--title--3-2cL">I&#x27;m still working out how to make activewear</h1><div><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/ddd56046af3e49c2c92297372c5325ff/2b56a/cover.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABT51S2EBP/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAECAxH/2gAIAQEAAQUCduc9NakqhXLKeDFp0//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/Aar/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAHhAAAgEDBQAAAAAAAAAAAAAAAAERAgMhEiIxQWH/2gAIAQEABj8CtRgW6Thi1zjtEuuow1Hp/8QAGxAAAgIDAQAAAAAAAAAAAAAAAREAITFBUYH/2gAIAQEAAT8hfE1sQslwLECwyFDAmPiek0I8EUYulnP/2gAMAwEAAgADAAAAENg//8QAFREBAQAAAAAAAAAAAAAAAAAAEQD/2gAIAQMBAT8QTK//xAAWEQEBAQAAAAAAAAAAAAAAAAAAETH/2gAIAQIBAT8Qwh//xAAcEAEBAAMBAAMAAAAAAAAAAAABEQAhQTFRcaH/2gAIAQEAAT8QPag5cPf3CqhEjU8+6Ya7mW5UwQimOxapbzFL6oadzeAjI+GoJwfjP//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="My turquoise Zubma outfit!"
+        title="My turquoise Zubma outfit!"
+        src="/blog/static/ddd56046af3e49c2c92297372c5325ff/b4294/cover.jpg"
+        srcset="/blog/static/ddd56046af3e49c2c92297372c5325ff/75985/cover.jpg 150w,
+/blog/static/ddd56046af3e49c2c92297372c5325ff/f93b5/cover.jpg 300w,
+/blog/static/ddd56046af3e49c2c92297372c5325ff/b4294/cover.jpg 600w,
+/blog/static/ddd56046af3e49c2c92297372c5325ff/8e1fc/cover.jpg 900w,
+/blog/static/ddd56046af3e49c2c92297372c5325ff/e5166/cover.jpg 1200w,
+/blog/static/ddd56046af3e49c2c92297372c5325ff/2b56a/cover.jpg 3110w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Now that I spend most of my time in my house, my biggest social event is Tuesday morning virtual Zumba (Zoomba??? :D).
+Given that I spend most of the rest of my time in PJs, I thought this moment was <em>fit</em> for making some Zumba outfits, and activewear got <em>pushed up</em> on my priority list. Since workout clothes are pretty simple, at first I thought this would be a <em>walk in the park</em>, but actually, I've been <em>breaking a sweat</em> getting these clothes to look right. </p>
+<p>Ok I'll stop now. </p>
+<h2>Set 1</h2>
+<!-- ![My turquoise Zumba workout outfit.](../images/workout_outfits/blue_front.jpg) -->
+<p>If I was going to spend time making workout clothes, I thought, I am gonna look <em>sharp</em> for virtual Zumba.
+I <em>love</em> bright colors and loud prints.
+So I made a beeline for the swimsuit fabric, and came out with this beautiful acquatic-jewel-toned Pucci-inspired knit.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/32a1bc7e603ac09a87d32b7623a038ce/e44b7/blue_fabric.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgMA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAZOFGBhh/8QAFxABAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAQABBQInBlu3/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABkQAQEBAQEBAAAAAAAAAAAAAAEAIRFRgf/aAAgBAQABPyHlgbYe/J+tkyxv/9oADAMBAAIAAwAAABBgD//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/EKf/xAAXEQADAQAAAAAAAAAAAAAAAAAAASER/9oACAECAQE/EMRVP//EABwQAQACAwADAAAAAAAAAAAAAAEAESExQWFxsf/aAAgBAQABPxAgcszZ8lTY6Wb9xUbR4GICjDXIqCZu1OxqCT//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Pucci-inspired bathing suit fabric with teal, blue, green, and yellow elements."
+        title="Pucci-inspired bathing suit fabric with teal, blue, green, and yellow elements."
+        src="/blog/static/32a1bc7e603ac09a87d32b7623a038ce/b4294/blue_fabric.jpg"
+        srcset="/blog/static/32a1bc7e603ac09a87d32b7623a038ce/75985/blue_fabric.jpg 150w,
+/blog/static/32a1bc7e603ac09a87d32b7623a038ce/f93b5/blue_fabric.jpg 300w,
+/blog/static/32a1bc7e603ac09a87d32b7623a038ce/b4294/blue_fabric.jpg 600w,
+/blog/static/32a1bc7e603ac09a87d32b7623a038ce/8e1fc/blue_fabric.jpg 900w,
+/blog/static/32a1bc7e603ac09a87d32b7623a038ce/e5166/blue_fabric.jpg 1200w,
+/blog/static/32a1bc7e603ac09a87d32b7623a038ce/e44b7/blue_fabric.jpg 3888w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I made a two-piece outfit by pairing <a href="https://jalie.com/3887-clara-high-waisted-leggings-sewing-pattern">this Jalie leggings pattern</a> and <a href="https://www.simplicity.com/simplicity-storefront-catalog/patterns/women/sportswear/simplicity-pattern-8560-misses-knit-sports-bras/">this Simplicity sports bra</a>. </p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/936b4634c118c03cbb71918cd51c24be/41f48/patterns.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 65.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGklEQVQ4y02TTW8bVRSGZ8WSf8FP6QqJNFAWlDaKEBskpMShQjRVxQLHEgUVSgkKVFRNqwZBHVGCEzdOGtuxHUdKRBUnKXGcL+N47PG3Z+yxZ+zxw52xEb3Skd577jnvPZ+SoihkZZlXjxpcJ+NbgvgWxnmWntBp/mWaayHn3Wy3yeVyZLNZ597r9egKXdcwkEzTwO/zUanWqDR0Fp78Rjl1DEoZ3717xAMBx0lfDdLZ3HJwuVgkEo2xvb2Nrut90gGxZAkQmP6S/NEBCbnMxtxdKnIavaDyyDPJmv9Px6GFRalaEMhCazSRT5OUlHw/+nKBTsd07CQlc8bk9/fxLgewsiccf/wdyu1ZqvkUrikP1yavYxgmHbVEeNpF9eQFGBqFbR95QWoT2um3jQFhzPuYd90/MPvEy1lklcDQGOlvfkROxPnswxGmJydo16rolRwzNz5CTu7QLJ4Tji5SqSiYepOaiNQU9bOxtBTa4LUPPDz2PSMdW+PGdTfRxQUqBwkujH7KuPsrLK1G+uiQ0SsjJPd2RdYdbt6fYXN/x4kqt79Ls1rtR/gg/hLpTRfuO8Lg2RIXxmaY+uIusyvPed31LW+MjqPX6xSKJR4+miOxu+84Po3HOMykHazsxUUp+nrp739k7jz4hZ8XgxRLZebnnhJcjeDfSeBd+J0F/6JjWK9W2Ptri9PUIV3RAO+KH92uW7eLmjujlT/HMk2kzcg6E1O3OE/tIaczpD73kHsepCXq8dPMNPPzv0LHEI0xyKZPqJZLtBt18idJLMui22xg5mWnOfZdeiFCvzR+k5cHB6iFAtGvb5PZiNMQhm7PLQKB5cGU/X9Ms4Nhixhm+6NXj+RshhjomqpSF7WqNRrUG5roYJmS+EDXVMewK1KzBtJqtVCFvaZpDrbf/hPJnm56Fh2RvymkI9JLnq2we/QHCSEnchhNrXPlvcsMvzXE6NURLg0Pc23iE1xj47w9dJGrl9/nnYvDDu4TDtbGXqOGiLBWL1GuFyicHqMqWcxuh2gkQjgYIhwKsSLWMRYOEx1gW7ceChMKBvkXXG+FqWhPrO4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The patterns I used for my workout outfits: Jalie 3887 and Simplicity 8560."
+        title="The patterns I used for my workout outfits: Jalie 3887 and Simplicity 8560."
+        src="/blog/static/936b4634c118c03cbb71918cd51c24be/0a47e/patterns.png"
+        srcset="/blog/static/936b4634c118c03cbb71918cd51c24be/8a4e8/patterns.png 150w,
+/blog/static/936b4634c118c03cbb71918cd51c24be/5a46d/patterns.png 300w,
+/blog/static/936b4634c118c03cbb71918cd51c24be/0a47e/patterns.png 600w,
+/blog/static/936b4634c118c03cbb71918cd51c24be/1cfc2/patterns.png 900w,
+/blog/static/936b4634c118c03cbb71918cd51c24be/c1b63/patterns.png 1200w,
+/blog/static/936b4634c118c03cbb71918cd51c24be/41f48/patterns.png 4575w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I tried on the leggings and they were <strong>not</strong> Zumba-ready.</p>
+<p>The "waistband" was approaching my bust.
+The elastic was way too loose.
+The leggings kept scooching down when I moved.
+How are you supposed to shimmy when your pants won't stay up?!?!</p>
+<p>I was very confused, because I'd heard good things about Jalie patterns being well-designed--why were my leggings so weird?
+I ended up shortening the elastic in the waistband and also taking in the waist seam substantially, which made the waistband hit lower on my torso.
+That helped a lot.
+The scooching/sagging didn't entirely go away.
+I think that's because I used a bathing suit material, which--I now know!--is not necessarily the same as "work out fabric".
+It was too thin and stretchy and didn't "hug" my body enough to support its own weight.
+I chalked the waistband issue up to stretchy fabric as well.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/41a28/blue_front_2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABiqWoOCY3/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIAAxIh/9oACAEBAAEFArWljkHfFdDC1DTWp//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/Aar/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAIBAAAgAEBwAAAAAAAAAAAAAAAAECESFBAxIiMVFhkf/aAAgBAQAGPwLDrIUon6KfAs6tYq4jTt2f/8QAGRABAQEBAQEAAAAAAAAAAAAAAREAITFB/9oACAEBAAE/IV4Fx2OHsEncqHI2Qi+rpjeeQ0dMnh9b/9oADAMBAAIAAwAAABB//wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAREP/aAAgBAwEBPxBMf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QD//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExQVFhcaHh8P/aAAgBAQABPxASiadNae4onY2KfnpBgUglbkFA5drJq8wpPwDO/mNWpCo4Haf/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Front of my turquoise Zumba workout outfit."
+        title="Front of my turquoise Zumba workout outfit."
+        src="/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/b4294/blue_front_2.jpg"
+        srcset="/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/75985/blue_front_2.jpg 150w,
+/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/f93b5/blue_front_2.jpg 300w,
+/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/b4294/blue_front_2.jpg 600w,
+/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/8e1fc/blue_front_2.jpg 900w,
+/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/e5166/blue_front_2.jpg 1200w,
+/blog/static/d7d85efc6ec2c11cd8248b0aef1781b8/41a28/blue_front_2.jpg 2918w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The bra turned out really cute, with no issues.
+Then again, I made the smallest size with the smallest cup, so there wasn't really much to support there XD</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/2b56a/blue_back.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAE59Q1om//EABgQAQEBAQEAAAAAAAAAAAAAAAIBAAMR/9oACAEBAAEFAq6Q+rmS0ZuV43Tp7v/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/Aar/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAHhAAAgEDBQAAAAAAAAAAAAAAAAERAhIhAyIxQWH/2gAIAQEABj8C0odot0nDFfOO0ZrqMNR6f//EABsQAAMAAgMAAAAAAAAAAAAAAAABESFRMUFh/9oACAEBAAE/IV0+lkeosy0IqrHOka+PSje2riIkuqyp/9oADAMBAAIAAwAAABCcP//EABYRAAMAAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxBtSj//xAAWEQEBAQAAAAAAAAAAAAAAAAAAETH/2gAIAQIBAT8Qwh//xAAfEAEAAgIBBQEAAAAAAAAAAAABABEhMUFRYaGx0eH/2gAIAQEAAT8QSgU9uDfmMxKKUK+/kM64q3lpKmBaKZJxdzgkmjrPuAhDdFgFcD0n/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Back of my turquoise Zumba workout outfit."
+        title="Back of my turquoise Zumba workout outfit."
+        src="/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/b4294/blue_back.jpg"
+        srcset="/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/75985/blue_back.jpg 150w,
+/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/f93b5/blue_back.jpg 300w,
+/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/b4294/blue_back.jpg 600w,
+/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/8e1fc/blue_back.jpg 900w,
+/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/e5166/blue_back.jpg 1200w,
+/blog/static/9a3b513f2e99d5d5ef73b074939fdf28/2b56a/blue_back.jpg 3110w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I think the outfit turned out super cute.
+It's exactly the kind of exuberant getup that is ideal for Zumba.
+Unfortunately, I do have to pull up the leggings every once in the while to keep them from slipping down! </p>
+<p>(Kind of unrelated note: <strong>one day</strong> after wearing my outfit for the first time, I found an ugly spot right on the front of the sports bra.
+I think some sweat dripped off my face onto my clothes and left some benzoyl peroxide--fabric-discoloring acne medication--on the fabric.
+I now no longer wear benzoyl peroxide during the day.
+If I must choose between not having acne and having nice clothes, I pick the clothes :(
+Lockdown skin care experimentation continues!).</p>
+<h2>Set 2</h2>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/341bb03436f43f4729cc9fb99313aff4/b8b04/grey_back_2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQC/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcItRYjJ/8QAGxABAAICAwAAAAAAAAAAAAAAAgABAyIREiP/2gAIAQEAAQUCa0yPYrklm55TvU//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EAB8QAAECBgMAAAAAAAAAAAAAAAABAgMREiEiQTFRcf/aAAgBAQAGPwKHoxcsvS4leui6uMeD/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARITHw/9oACAEBAAE/IUquwbTBKKEUj0ykhoa9TtxeqOY8Zs//2gAMAwEAAgADAAAAEIA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxAv/8QAHRABAAMAAQUAAAAAAAAAAAAAAQARITFBYYGhwf/aAAgBAQABPxA13iOHAlwbAWtzfcRPdivlgbNgrkpvePTctgaN/EoIJ0S3P//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Front of my gray Zumba workout outfit."
+        title="Front of my gray Zumba workout outfit."
+        src="/blog/static/341bb03436f43f4729cc9fb99313aff4/b4294/grey_back_2.jpg"
+        srcset="/blog/static/341bb03436f43f4729cc9fb99313aff4/75985/grey_back_2.jpg 150w,
+/blog/static/341bb03436f43f4729cc9fb99313aff4/f93b5/grey_back_2.jpg 300w,
+/blog/static/341bb03436f43f4729cc9fb99313aff4/b4294/grey_back_2.jpg 600w,
+/blog/static/341bb03436f43f4729cc9fb99313aff4/8e1fc/grey_back_2.jpg 900w,
+/blog/static/341bb03436f43f4729cc9fb99313aff4/e5166/grey_back_2.jpg 1200w,
+/blog/static/341bb03436f43f4729cc9fb99313aff4/b8b04/grey_back_2.jpg 2870w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I wanted to see if using proper workout fabric would fix some of my legging issues.
+We had some compression knit in the stash, so I decided to make another outfit.
+This fabric is <strong>very</strong> tame by my standards.
+I really had to enforce some self control to go through with this project.
+I framed it as an experiment: if these leggings hold up, then I know that the thing to do is to locate some boppin' compression knit for future Zumba-wear.</p>
+<p>I also learned a new tecnique for this outfit: a flatlock seam!
+It's commonly-used in athletic wear because it creates a really flat, thin seam.
+I checked out Angela Wolff and xxxx's YouTube tutorials and experimented a bit to figure out the right serger settings. </p>
+<p>I quickly stitched up the leggings, and...</p>
+<p><em>Why are they so weird???</em>
+The waistband is too high!
+The waist seam extends the largest part of my tummy!
+You can see all of my underwear dimples!
+I checked the photos on the front of the pattern--the top of the legggings seemed to hit the model right around the belly button.
+Mine surpassed my belly button by several inches.
+Did I have a freakishly low belly button?</p>
+<p>Halfway through making the sports bra, I realized something.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/e44b7/jali_wrong_line.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABRoZPZYhWJ//EABoQAAMAAwEAAAAAAAAAAAAAAAECBAADISP/2gAIAQEAAQUC1zFwJ0UPOwaU+WE9/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAwADAQAAAAAAAAAAAAAAAAERECEigf/aAAgBAQAGPwJOpIkpztHuf//EABoQAQADAAMAAAAAAAAAAAAAAAEAIVEQETH/2gAIAQEAAT8hZrEq6n1YsBgxaZHeVxP/2gAMAwEAAgADAAAAEA8P/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/EIx//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QV//EAB8QAQACAQMFAAAAAAAAAAAAAAEAESExQVFhcYGxwf/aAAgBAQABPxAsB2OrLYCUu17ceJvMNEE6McUXcHv7L0OQ4iKXLP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The leg pattern piece of the Jalie leggings pattern I used...which I did not follow, oops!"
+        title="The leg pattern piece of the Jalie leggings pattern I used...which I did not follow, oops!"
+        src="/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/b4294/jali_wrong_line.jpg"
+        srcset="/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/75985/jali_wrong_line.jpg 150w,
+/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/f93b5/jali_wrong_line.jpg 300w,
+/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/b4294/jali_wrong_line.jpg 600w,
+/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/8e1fc/jali_wrong_line.jpg 900w,
+/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/e5166/jali_wrong_line.jpg 1200w,
+/blog/static/6d1d3e9bb1fc23ea4f83b22ecd75e12e/e44b7/jali_wrong_line.jpg 3888w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I ripped out the waist seam, trimmed enough length off the top of the leggings to bring the top of the waistband down to my belly button, and sewed the waistband back on.
+Amazingly, when you don't elongate random pattern pieces by 4 inches, the clothing fits better.
+I apologize for ever doubting Jalie's pattern, this was 100% sewist's error.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/ca5112c364a542e770b63cb079d13c6f/3ddaa/grey_front.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAABRkXZWCBP/8QAGxAAAQUBAQAAAAAAAAAAAAAAAgABAxESEyH/2gAIAQEAAQUC1UJye26Y8rqKEtN//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8Bqv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AYj/xAAbEAACAwADAAAAAAAAAAAAAAAAAQIRITEzUf/aAAgBAQAGPwKKvbMkzg9SOtFn/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARQSEx/9oACAEBAAE/IW48MQ8zBYvVB4bHVUIePkomnoLwZ//aAAwDAQACAAMAAAAQaC//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxAp/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxAP/8QAHxABAQABAwUBAAAAAAAAAAAAAREAITFRQWFxkcHR/9oACAEBAAE/EGPBC2nP7gYIWIcdcud5ljWeMKN4TquKlu7ave35lzbtlD2Z/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Front of my gray Zumba workout outfit."
+        title="Front of my gray Zumba workout outfit."
+        src="/blog/static/ca5112c364a542e770b63cb079d13c6f/b4294/grey_front.jpg"
+        srcset="/blog/static/ca5112c364a542e770b63cb079d13c6f/75985/grey_front.jpg 150w,
+/blog/static/ca5112c364a542e770b63cb079d13c6f/f93b5/grey_front.jpg 300w,
+/blog/static/ca5112c364a542e770b63cb079d13c6f/b4294/grey_front.jpg 600w,
+/blog/static/ca5112c364a542e770b63cb079d13c6f/8e1fc/grey_front.jpg 900w,
+/blog/static/ca5112c364a542e770b63cb079d13c6f/e5166/grey_front.jpg 1200w,
+/blog/static/ca5112c364a542e770b63cb079d13c6f/3ddaa/grey_front.jpg 3274w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I think the outfit is pretty flattering, and these pants certainly stay on a lot better!
+Compression fabric is definitely the way to go.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/c4740/grey_back.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBA//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAHOcorUpP/EABsQAAICAwEAAAAAAAAAAAAAAAACAxIBESEj/9oACAEBAAEFApGGftuLIuTyLbP/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGq/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BiP/EABwQAAICAgMAAAAAAAAAAAAAAAAhAQISQTFxof/aAAgBAQAGPwKjFb0jojONaHkLg//EABsQAAIDAAMAAAAAAAAAAAAAAAERACFBMVGx/9oACAEBAAE/IbBpVow/OToRVgJJAwkwgmDG/R7N1wHP/9oADAMBAAIAAwAAABAQD//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/ECn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/EA//xAAeEAEAAgIBBQAAAAAAAAAAAAABETEAQSFhcYGx4f/aAAgBAQABPxC9GRNNfcnVJQkmNesZlkCRaYSvMV8k31ywkSkNS48Rm3Joswds/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Back of my gray Zumba workout outfit."
+        title="Back of my gray Zumba workout outfit."
+        src="/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/b4294/grey_back.jpg"
+        srcset="/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/75985/grey_back.jpg 150w,
+/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/f93b5/grey_back.jpg 300w,
+/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/b4294/grey_back.jpg 600w,
+/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/8e1fc/grey_back.jpg 900w,
+/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/e5166/grey_back.jpg 1200w,
+/blog/static/f1ca4fe6cc4fd725e0eaa28800fd7681/c4740/grey_back.jpg 2936w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>However, there was another little bug, this time regarding the flatlocking.
+I decided to use light pink thread to create a little decoration and add a pop of color to the garment.
+I did not consider that this leggings pattern has no center front seam, and instead has a triangular gusset in the back.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/b7f86/triangle_crotch.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAa6cqYfExP/EABsQAAIDAAMAAAAAAAAAAAAAAAABAgMSERMh/9oACAEBAAEFAtuNN1mTs8U0agzXJ//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/Aar/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAEDAhEiMRIhYf/aAAgBAQAGPwKPuzFxkbFcSrWjJsx16f/EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hTAu1MVZ7slLAql4jxhLZNyyXg8NTrTgj/9oADAMBAAIAAwAAABB0/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxAp/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxAP/8QAGxABAQADAQEBAAAAAAAAAAAAAREAIUFRYTH/2gAIAQEAAT8Qrb0PD7hKCGmon3uMFHSPc24MLGr73EzwmTr+Dd5EoSEDYa5n/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The gusset...oops."
+        title="The gusset...oops."
+        src="/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/b4294/triangle_crotch.jpg"
+        srcset="/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/75985/triangle_crotch.jpg 150w,
+/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/f93b5/triangle_crotch.jpg 300w,
+/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/b4294/triangle_crotch.jpg 600w,
+/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/8e1fc/triangle_crotch.jpg 900w,
+/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/e5166/triangle_crotch.jpg 1200w,
+/blog/static/9d22356fd6ed08d34ef46b3d11edc3b2/b7f86/triangle_crotch.jpg 3106w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I have highlighted my crotch with a pink triangle.</p>
+<p>Next time, I will use a coordinating thread color for the gusset.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/5c669/grey_barbell.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEA//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAFVh0K0jE//xAAaEAACAwEBAAAAAAAAAAAAAAACAwABERIT/9oACAEBAAEFAu8Sx1aRFossZ7VKbP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/Aar/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAHRAAAQQCAwAAAAAAAAAAAAAAAAECESETQSIxYf/aAAgBAQAGPwJjZudHFylIR2iaUnE2yVm/T//EABsQAAMBAQADAAAAAAAAAAAAAAERIQAxQZHB/9oACAEBAAE/IS2AhZ4GVM7gJnScVgEGExC+l6zAhqifN//aAAwDAQACAAMAAAAQS+//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxAp/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/EI1D/8QAHxABAQACAgEFAAAAAAAAAAAAAREAITFBUWFxocHR/9oACAEBAAE/EJNqykO/0ziSID8zX38YwQYsNZ7YVroUK86zcq8SMg68YI9GDB6bWf/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The grey outfit is good for weight lifting, because it matches the barbells..
+The gray outfit is good for weight lifting, because it matches the barbells. I like when things match. I did do pushups on the floor before taking these pictures.
+"
+        title="The grey outfit is good for weight lifting, because it matches the barbells..
+The gray outfit is good for weight lifting, because it matches the barbells. I like when things match. I did do pushups on the floor before taking these pictures.
+"
+        src="/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/b4294/grey_barbell.jpg"
+        srcset="/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/75985/grey_barbell.jpg 150w,
+/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/f93b5/grey_barbell.jpg 300w,
+/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/b4294/grey_barbell.jpg 600w,
+/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/8e1fc/grey_barbell.jpg 900w,
+/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/e5166/grey_barbell.jpg 1200w,
+/blog/static/e7718e378fa05f3cd87e0bf0f6194d43/5c669/grey_barbell.jpg 3326w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Set 3: TBA</h2>
+<p>I am still on the quest to sew the perfect, splashy, structurally secure Zumba workout outfit.
+Currently, I have a lot of wild bathing suit fabric, and some sombre compression fabric, and no wild compression fabric.
+Does anyone know where to get really colorful patterned athletic material? </p>
+<p>Until then, I will be rocking my new outfits at Zoomba!</p>
+<p>P.S. I tried to get some "action shots" of me doing Zumba moves. Enjoy.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 600px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/blog/static/033be231be33ab1ff83e0f569a399eca/5e6fc/zumba_collage_3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 112.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBAP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABzXp0iUqzhKg//8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAERITIf/aAAgBAQABBQIO+Vc2HqWzTRMV2Ub0OnoY1//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABYRAAMAAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwFw/8QAHBAAAQQDAQAAAAAAAAAAAAAAAAERITEiUWGB/9oACAEBAAY/AoPXMpF6Jway2hi6Q2f/xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhMUFhkf/aAAgBAQABPyHNvgG5CUL+lnkYdL9iJmY6MtHSj0dliKvkLucND5EoK8NOwVBx6T//2gAMAwEAAgADAAAAEDgHfv/EABcRAQEBAQAAAAAAAAAAAAAAAAARAYH/2gAIAQMBAT8Qrq6uv//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAgEBPxCImIf/xAAeEAEAAgICAwEAAAAAAAAAAAABESEAMUFRYYGhsf/aAAgBAQABPxDQOI4O6TnDxBsqJSBPzvFgkqiTXi8FmSQhSA8awhwNS2jUGASC1Kn2HDCPDDEhuScoGLJG0Wdawgvk0T7vP//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Zumbaaaaaaaa!"
+        title="Zumbaaaaaaaa!"
+        src="/blog/static/033be231be33ab1ff83e0f569a399eca/b4294/zumba_collage_3.jpg"
+        srcset="/blog/static/033be231be33ab1ff83e0f569a399eca/75985/zumba_collage_3.jpg 150w,
+/blog/static/033be231be33ab1ff83e0f569a399eca/f93b5/zumba_collage_3.jpg 300w,
+/blog/static/033be231be33ab1ff83e0f569a399eca/b4294/zumba_collage_3.jpg 600w,
+/blog/static/033be231be33ab1ff83e0f569a399eca/8e1fc/zumba_collage_3.jpg 900w,
+/blog/static/033be231be33ab1ff83e0f569a399eca/e5166/zumba_collage_3.jpg 1200w,
+/blog/static/033be231be33ab1ff83e0f569a399eca/5e6fc/zumba_collage_3.jpg 2432w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p></div></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/working-it-out/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-009fbf66d6ecd3697ec3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-7ed158c9e3fc57d75d87.js"],"component---src-pages-404-js":["/component---src-pages-404-js-000069a2394cf6b25573.js"],"component---src-pages-about-js":["/component---src-pages-about-js-8ccbd331fd09bca18924.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-7a00cda290d4fade6939.js"],"component---src-pages-index-js":["/component---src-pages-index-js-12d26dd5292b8c0a8432.js"],"component---src-pages-my-files-js":["/component---src-pages-my-files-js-23470994d8981f130331.js"],"component---src-pages-otherpage-js":["/component---src-pages-otherpage-js-aa3233ba8ff9ae220e63.js"]};/*]]>*/</script><script src="/blog/webpack-runtime-1e153563ffea3f9cca3e.js" async=""></script><script src="/blog/styles-39eefb1d9dd13251b0c0.js" async=""></script><script src="/blog/commons-3b9f0c565bd6143bfca0.js" async=""></script><script src="/blog/app-009fbf66d6ecd3697ec3.js" async=""></script><script src="/blog/component---src-templates-blog-post-js-7ed158c9e3fc57d75d87.js" async=""></script></body></html>
