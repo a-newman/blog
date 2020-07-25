@@ -25,7 +25,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    // `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -34,7 +33,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               // used to generate different image widths
-              maxWidth: 600,
+              maxWidth: 800,
               // showCaptions: true,
               markdownCaptions: true,
             },

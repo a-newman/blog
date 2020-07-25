@@ -47,14 +47,14 @@
         "url": "https://github.com/gatsbyjs/gatsby-starter-default"
     },
     "scripts": {
-        "build": "gatsby build",
+        "build": "gatsby build --prefix-paths",
         "clean": "gatsby clean",
+        "deploy": "gatsby clean; gatsby build --prefix-paths && gh-pages -d public",
         "develop": "gatsby develop",
         "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-        "serve": "gatsby serve",
+        "serve": "gatsby serve --prefix-paths",
         "start": "npm run develop",
-        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
     },
     "version": "0.1.0"
 }

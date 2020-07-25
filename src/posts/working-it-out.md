@@ -15,8 +15,6 @@ Ok I'll stop now.
 
 ## Set 1
 
-<!-- ![My turquoise Zumba workout outfit.](../images/workout_outfits/blue_front.jpg) -->
-
 If I was going to spend time making workout clothes, I thought, I am gonna look _sharp_ for virtual Zumba. 
 I _love_ bright colors and loud prints. 
 So I made a beeline for the swimsuit fabric, and came out with this beautiful acquatic-jewel-toned Pucci-inspired knit.
