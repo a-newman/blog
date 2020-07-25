@@ -124,5 +124,5 @@ Until then, I will be rocking my new outfits at Zoomba!
 
 P.S. I tried to get some "action shots" of me doing Zumba moves. Enjoy.
 
-![Zumbaaaaaaaa!](../images/workout_outfits/zumba_collage.jpg)
+![Zumbaaaaaaaa!](../images/workout_outfits/zumba_collage_3.jpg)
 

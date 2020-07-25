@@ -5,3 +5,6 @@
  */
 
 import "./src/styles/global.css"
+
+require("typeface-satisfy")
+require("typeface-merriweather")
