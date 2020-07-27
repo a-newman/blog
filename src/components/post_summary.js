@@ -4,7 +4,7 @@ import postSummaryStyles from "./post_summary.module.css"
 import Img from "gatsby-image"
 
 export default ({ post }) => {
-  console.log("frontmatter", post.frontmatter)
+  console.log("excerpt", post.excerpt)
   return (
     <div className={`${postSummaryStyles.container} shadowBox`}>
       <Link className={postSummaryStyles.titleLink} to={post.fields.slug}>
@@ -13,10 +13,8 @@ export default ({ post }) => {
         </h3>
       </Link>
       <h4>{post.frontmatter.date}</h4>
-      {post.frontmatter.cover && (
-        <Img fluid={post.frontmatter.cover.childImageSharp.fluid} />
-      )}
-      <p className={postSummaryStyles.excerpt}>{post.excerpt}</p>
+      <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+
       <Link to={post.fields.slug} className={postSummaryStyles.readmore}>
         Read More <span className={postSummaryStyles.readmorespan}>></span>
       </Link>

@@ -13,6 +13,8 @@ Given that I spend most of the rest of my time in PJs, I thought this moment was
 
 Ok I'll stop now. 
 
+<!-- end excerpt -->
+
 ## Set 1
 
 If I was going to spend time making workout clothes, I thought, I am gonna look _sharp_ for virtual Zumba. 

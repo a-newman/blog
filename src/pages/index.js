@@ -25,7 +25,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 300)
+          excerpt(format: HTML)
           html
           tableOfContents(absolute: false)
           frontmatter {
