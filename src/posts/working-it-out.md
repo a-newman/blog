@@ -19,7 +19,7 @@ Ok I'll stop now.
 
 If I was going to spend time making workout clothes, I thought, I am gonna look _sharp_ for virtual Zumba. 
 I _love_ bright colors and loud prints. 
-So I made a beeline for the swimsuit fabric, and came out with this beautiful acquatic-jewel-toned Pucci-inspired knit.
+So I made a beeline for the swimsuit fabric, and came out with this beautiful aquatic-jewel-toned Pucci-inspired knit.
 
 ![Pucci-inspired bathing suit fabric with teal, blue, green, and yellow elements.](../images/workout_outfits/blue_fabric.jpg)
 
@@ -70,9 +70,9 @@ This fabric is __very__ tame by my standards.
 I really had to enforce some self control to go through with this project.
 I framed it as an experiment: if these leggings hold up, then I know that the thing to do is to locate some boppin' compression knit for future Zumba-wear.
 
-I also learned a new tecnique for this outfit: a flatlock seam! 
+I also learned a new technique for this outfit: a flatlock seam! 
 It's commonly-used in athletic wear because it creates a really flat, thin seam.
-I checked out Angela Wolff and xxxx's YouTube tutorials and experimented a bit to figure out the right serger settings. 
+I checked out [Angela Wolf](https://www.youtube.com/watch?v=vITyDS-4-nI) and [Melly Sews'](https://www.youtube.com/watch?v=y0h-iUgKdzk) YouTube tutorials and experimented a bit to figure out the right serger settings. 
 
 I quickly stitched up the leggings, and...
 
@@ -80,7 +80,7 @@ _Why are they so weird???_
 The waistband is too high! 
 The waist seam extends the largest part of my tummy! 
 You can see all of my underwear dimples! 
-I checked the photos on the front of the pattern--the top of the legggings seemed to hit the model right around the belly button.
+I checked the photos on the front of the pattern--the top of the leggings seemed to hit the model right around the belly button.
 Mine surpassed my belly button by several inches. 
 Did I have a freakishly low belly button?
 
