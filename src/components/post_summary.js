@@ -4,7 +4,6 @@ import postSummaryStyles from "./post_summary.module.css"
 import Img from "gatsby-image"
 
 export default ({ post }) => {
-  console.log("excerpt", post.excerpt)
   return (
     <div className={`${postSummaryStyles.container} shadowBox`}>
       <Link className={postSummaryStyles.titleLink} to={post.fields.slug}>

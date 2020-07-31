@@ -6,7 +6,6 @@ import PostSummary from "../components/post_summary.js"
 //import SEO from "../components/seo"
 
 export default ({ data }) => {
-  console.log("data", data)
   const mdPages = data.allMarkdownRemark.edges
   return (
     <Layout>
