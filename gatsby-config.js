@@ -4,6 +4,7 @@ module.exports = {
     title: `Annie Makes Tech Styles`,
     author: `Anelise`,
     description: `a description`,
+    siteUrl: `https://a-newman.github.io/blog/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -48,6 +49,7 @@ module.exports = {
         trackingId: "UA-174136095-1",
       },
     },
+    `gatsby-plugin-feed`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
