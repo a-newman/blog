@@ -24,6 +24,7 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
+        ignore: process.env.GATSBY_PREVIEW ? [] : [`**/drafts/*`],
       },
     },
     {
