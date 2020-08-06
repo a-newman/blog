@@ -6,7 +6,7 @@ import PostSummary from "../components/post_summary.js"
 //import SEO from "../components/seo"
 
 export default ({ data }) => {
-  const mdPages = data.allMarkdownRemark.edges
+  const mdPages = data.allMdx.edges
   return (
     <Layout>
       <div>
@@ -20,13 +20,11 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
           id
-          excerpt(format: HTML)
-          html
-          tableOfContents(absolute: false)
+          excerpt(pruneLength: 100)
           frontmatter {
             title
             cover {

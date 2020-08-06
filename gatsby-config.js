@@ -27,11 +27,12 @@ module.exports = {
         ignore: process.env.GATSBY_PREVIEW ? [] : [`**/drafts/*`],
       },
     },
+    `gatsby-remark-images`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        excerpt_separator: "<!-- end excerpt -->",
-        plugins: [
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -50,7 +51,7 @@ module.exports = {
         trackingId: "UA-174136095-1",
       },
     },
-    `gatsby-plugin-feed`,
+    `gatsby-plugin-feed-mdx`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
