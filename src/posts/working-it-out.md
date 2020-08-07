@@ -13,7 +13,7 @@ Given that I spend most of the rest of my time in PJs, I thought this moment was
 
 Ok I'll stop now. 
 
-<!-- end excerpt -->
+<hr endexcerpt="true"/>
 
 ## Set 1
 

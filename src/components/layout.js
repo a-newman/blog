@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
 import layoutStyles from "./layout.module.css"
 import SewingMachineAsciiArt from "./sewing_machine_art"
 
@@ -58,8 +59,30 @@ export default ({ children }) => {
   )
   const title = data.site.siteMetadata.title
 
+  // This updated wrapper filters out all components after the component
+  // <hr endexcerpt/> if onlyExcerpt is set to true
+  // Technique from:
+  // https://github.com/gatsbyjs/gatsby/issues/16865#issuecomment-612256713
+  const mdxProviderComponents = {
+    wrapper: ({ onlyExcerpt = false, children }) => {
+      let updatedChildren = [...children]
+      if (onlyExcerpt) {
+        let afterExcerpt = false
+        // filter out everything after <hr endexcerpt/>
+        updatedChildren = children.filter(child => {
+          const isDivider = child.props && child.props["endexcerpt"]
+          if (isDivider) {
+            afterExcerpt = true
+          }
+          return !afterExcerpt
+        })
+      }
+      return <>{updatedChildren}</>
+    },
+  }
+
   return (
-    <>
+    <MDXProvider components={mdxProviderComponents}>
       <div className={layoutStyles.backgroundDimmer}></div>
       <div>
         <div className={layoutStyles.centerSection}>
@@ -67,6 +90,6 @@ export default ({ children }) => {
           {children}
         </div>
       </div>
-    </>
+    </MDXProvider>
   )
 }

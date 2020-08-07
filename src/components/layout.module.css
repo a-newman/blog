@@ -73,3 +73,7 @@ div.titleSpaceHolder {
   background-color: var(--background-color);
   opacity: 0.5;
 }
+
+hr[endexcerpt] {
+  display: none;
+}

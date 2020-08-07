@@ -25,6 +25,7 @@ export const query = graphql`
         node {
           id
           excerpt(pruneLength: 100)
+          body
           frontmatter {
             title
             cover {

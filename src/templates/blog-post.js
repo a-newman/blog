@@ -6,9 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import styles from "./blog-post.module.css"
 
 export default ({ data }) => {
-  console.log("data", data)
   const post = data.mdx
-  console.log("post", post)
   return (
     <Layout>
       <div className={"shadowBox"}>
