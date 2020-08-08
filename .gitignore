@@ -1,5 +1,6 @@
 /misc
 /all_images
+/src/images/**/
 
 # swp files 
 *.sw[oap]
