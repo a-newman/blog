@@ -10,16 +10,18 @@ const ListLink = props => (
   </li>
 )
 
-const StyledTitle = () => (
-  <h1 className={layoutStyles.title}>
-    <span className={layoutStyles.titleFlouncy}>Annie Makes </span>
-    <div className={layoutStyles.titleSpaceHolder}></div>
-    <br />
-    <div className={layoutStyles.titleSpaceHolder}></div>
-    <span className={layoutStyles.titleTech}>Tech</span>
-    <span className={layoutStyles.titleFlouncy}> Styles</span>
-  </h1>
-)
+const StyledTitle = () => {
+  return (
+    <h1 className={layoutStyles.title}>
+      <span className={layoutStyles.titleFlouncy}>Annie Makes </span>
+      <div className={layoutStyles.titleSpaceHolder}></div>
+      <br />
+      <div className={layoutStyles.titleSpaceHolder}></div>
+      <span className={layoutStyles.titleTech}>Tech</span>
+      <span className={layoutStyles.titleFlouncy}> Styles</span>
+    </h1>
+  )
+}
 
 const Header = props => (
   <div

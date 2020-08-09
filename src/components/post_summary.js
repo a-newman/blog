@@ -1,8 +1,7 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import postSummaryStyles from "./post_summary.module.css"
-import Img from "gatsby-image"
 
 export default ({ post }) => {
   return (

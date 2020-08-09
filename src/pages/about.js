@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 
 import Emoji from "../components/emoji.js"
 import Layout from "../components/layout.js"

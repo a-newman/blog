@@ -7,6 +7,7 @@ import PostSummary from "../components/post_summary.js"
 
 export default ({ data }) => {
   const mdPages = data.allMdx.edges
+  console.log("data", data)
   return (
     <Layout>
       <div>
