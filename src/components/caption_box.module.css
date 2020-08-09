@@ -1,6 +1,11 @@
 .captionImageContainer {
-  line-height: 1;
+  line-height: 1.2;
   font-size: 0.75em;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.captionImageContainer span {
+  margin-bottom: 0.25em;
 }
