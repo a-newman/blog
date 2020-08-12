@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{CycC:function(e,n,t){"use strict";t.r(n);var r=t("q1tI"),a=t.n(r),c=function(e){return a.a.createElement("h1",null,e.headerText)};n.default=function(){return a.a.createElement("div",null,a.a.createElement(c,{headerText:"An Other Page"}),"Here it is!")}}}]);
-//# sourceMappingURL=component---src-pages-otherpage-js-04ab5a37415c3d9f0743.js.map
