@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Annie Makes Tech Styles`,
-    author: `Anelise`,
-    description: `a description`,
-    siteUrl: `https://a-newman.github.io/blog/`,
+    author: `Annie`,
+    description: `A blog about sewing and coding`,
+    siteUrl: `https://anniemakestechstyles.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

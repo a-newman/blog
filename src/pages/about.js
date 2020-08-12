@@ -2,9 +2,11 @@ import React from "react"
 
 import Emoji from "../components/emoji.js"
 import Layout from "../components/layout.js"
+import SEO from "../components/seo"
 
 export default ({ data }) => (
   <Layout>
+    <SEO title={"About"} />
     <div className={"shadowBox"}>
       <h1>About the blog</h1>
       <p>

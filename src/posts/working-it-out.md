@@ -4,6 +4,7 @@ status: "published"
 date: "2020-07-25"
 tags: ["activewear", "garments"]
 cover: "../images/workout_outfits/cover.jpg"
+description: "The moment is fit for making Zoomba outfits"
 ---
 
 ![My turquoise Zubma outfit!](../images/workout_outfits/cover.jpg)

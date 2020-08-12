@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import PostSummary from "../components/post_summary.js"
-//import SEO from "../components/seo"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const mdPages = data.allMdx.edges
   console.log("data", data)
   return (
     <Layout>
+      <SEO />
       <div>
         {mdPages.map(({ node }, idx) => (
           <PostSummary post={node} key={idx} />

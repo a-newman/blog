@@ -4,11 +4,18 @@ import CommentBox from "../components/comment_box.js"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styles from "./blog-post.module.css"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.mdx
   return (
     <Layout>
+      <SEO
+        description={post.frontmatter.description}
+        title={post.frontmatter.title}
+        isArticle={true}
+        url={post.slug}
+      />
       <div className={"shadowBox"}>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
         {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
@@ -25,6 +32,8 @@ export const query = graphql`
       body
       frontmatter {
         title
+        date
+        description
       }
       slug
     }
