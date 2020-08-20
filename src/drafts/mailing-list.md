@@ -5,14 +5,13 @@ date: "2020-08-10"
 tags: ["making-the-blog", "tech"]
 ---
 
-<!-- ![My turquoise Zubma outfit!](../images/workout_outfits/cover.jpg) -->
-
 I recently added a subscribe button!
 
-<!-- Pic of subscribe button -->
-<!-- caption: By the way, is it easy enough to find? --> 
-<!-- Is it irritating that you need to click a button to get the input bar for the email address? --> 
-<!-- Give me all your UI preferences in the comments, I'm designing-on-the-fly -->
+<!--Pic of subscribe button
+
+caption: By the way, is it easy enough to find? 
+Is it irritating that you need to click a button to get the input bar for the email address? 
+Give me all your UI preferences in the comments, I'm designing-on-the-fly-->
 
 Isn't it beautiful? 
 
@@ -29,7 +28,6 @@ It's been pretty cool seeing how much I've learned in the past five years.
 I actually have learned a ton...phew!
 
 Another big plus of coding my own blog is that I can customize it exactly how I want. 
-<!-- I can use the same customized setup that I use for coding for writing and publishing blog posts. -->
 I can even add custom programs to my posts.
 When I was in high school, I tried to add a simple interactive program to a Blogger post, and that was clearly frowned upon.
 I had to paste my JavaScript inside the HTML editor (spiritually, that's akin to shoving a piece of silk chiffon into your interfacing drawer), and then once I finally got it working I had to never update the post again because if I did it would break.
