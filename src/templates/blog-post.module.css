@@ -1,5 +1,10 @@
 h1.title {
   color: var(--post-title);
+  margin-bottom: 0.5em;
+}
+
+.date {
+  margin-bottom: 1.5em;
 }
 
 /* Iframes that are not the Disqus iframe */
@@ -9,3 +14,5 @@ iframe:not([title='Disqus']) {
   border-width: 0px;
   box-shadow: 2px 2px 12px var(--light-grey);
 }
+
+

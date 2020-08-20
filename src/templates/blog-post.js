@@ -18,6 +18,7 @@ export default ({ data }) => {
       />
       <div className={"shadowBox"}>
         <h1 className={styles.title}>{post.frontmatter.title}</h1>
+        <h4 className={styles.date}>{post.frontmatter.date}</h4>
         {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
         <MDXRenderer>{post.body}</MDXRenderer>
         <CommentBox slug={post.slug} title={post.frontmatter.title} />
@@ -32,8 +33,8 @@ export const query = graphql`
       body
       frontmatter {
         title
-        date
         description
+        date(formatString: "MMMM DD, YYYY")
       }
       slug
     }
