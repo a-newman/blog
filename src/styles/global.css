@@ -32,6 +32,10 @@ body {
   background-size: 100%;
 }
 
+h1 {
+  color: var(--post-title);
+}
+
 a:hover {
   color: var(--link-hover-color);
 }
