@@ -44,3 +44,7 @@ a:hover {
   padding: 1em;
   margin-bottom: 2em;
 }
+
+video {
+  width: 100%;
+}
