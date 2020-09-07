@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"6z1y":function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),o=t("Bl7J"),c=t("vrFN"),r=t("DzJI");a.default=function(e){e.data;return l.a.createElement(o.a,null,l.a.createElement(c.a,{title:"Logo",description:"Just a place where I can play around with my 'logo'"}),l.a.createElement("div",{className:"shadowBox"},l.a.createElement("h1",null,"Site Logo"),l.a.createElement(r.a,null)))}}}]);
+//# sourceMappingURL=component---src-pages-logo-js-1f8a5e88cdfa065487f3.js.map
