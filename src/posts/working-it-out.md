@@ -2,7 +2,7 @@
 title: "I'm still working out how to make activewear"
 status: "published"
 date: "2020-07-25"
-tags: ["activewear", "garments"]
+tags: ["activewear", "garments", "finished"]
 cover: "../images/workout_outfits/cover.jpg"
 description: "The moment is fit for making Zoomba outfits"
 ---
